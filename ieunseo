@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="newsic" content="width=device-width, initial-scale=1.0">
+<title>개인 페이지</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+.header {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.header img {
+    width: 100%;
+    height: auto;
+}
+.header img:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.header img:last-child {
+    position: relative;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+.album-container {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.album-image {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+.zigzag-left, .zigzag-right {
+    display: 0px;
+    flex-direction: column;
+    gap: 20px;
+}
+.zigzag img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.zigzag img:hover {
+    transform: scale(1.1);
+}
+.artist-name {
+    font-size: 2em;
+    margin: 20px 0 10px;
+    transition: font-size 0.3s ease;
+}
+.album-title {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #555;
+    transition: font-size 0.3s ease;
+}
+.additional-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+.button:hover {
+    background-color: #555;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.full-width-image {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.description {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 10px;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 60px;
+}
+</style>
+</head>
+<body>
+<div class="header">
+    <img src="https://i.imgur.com/HevVYD6.png" alt="상단 이미지">
+    <img src="https://i.imgur.com/id0ABU3.png" alt="추가 이미지">
+</div>
+<div class="content">
+    <div class="album-container">
+        <div class="zigzag-left">
+            <a href="https://imgur.com/WxUlcuO" target="_blank" class="zigzag">
+                <img src="https://i.imgur.com/WxUlcuO.png" alt="인물 사진 1">
+            </a>
+            <a href="https://imgur.com/HSZkQ4z" target="_blank" class="zigzag">
+                <img src="https://i.imgur.com/HSZkQ4z.png" alt="인물 사진 3">
+            </a>
+        </div>
+      
+            <img src="https://cdnimg.melon.co.kr/cm/album/images/023/35/785/2335785_500.jpg/melon/optimize/90" alt="앨범 사진" class="album-image">
+       
+        <div class="zigzag-right">
+            <a href="https://imgur.com/UYJsn32" target="_blank" class="zigzag">
+                <img src="https://i.imgur.com/UYJsn32.png" alt="인물 사진 2">
+            </a>
+            <a href="https://imgur.com/O2fhUFK" target="_blank" class="zigzag">
+                <img src="https://i.imgur.com/O2fhUFK.png" alt="인물 사진 4">
+            </a>
+        </div>
+    </div>
+    <div class="artist-name">
+      Silica Gel
+    </div>
+    <div class="album-title">
+        새삼스레 들이켜본 무중력 사슴의 다섯가지 시각
+    </div>
+    <div class="button-container">
+        <a href="https://youtu.be/rkxemvbVUs4?si=_3E_-ORyy_Iglq-v" target="_blank" class="button">Let's play</a>
+    </div>
+    <div class="additional-image-container">
+        
+            <img src="https://i.imgur.com/jMSccEA.mp4" alt="추가 이미지" class="full-width-image">
+        
+    </div>
+    <div class="description">
+        밴드 ‘실리카겔’은 김한주(건반/보컬), 김춘추(기타/보컬), 김건재(드럼), 최웅희(베이스) 4인으로 이루어진 밴드다. 다채로운 스펙트럼을 바탕으로 구축해 낸 고유의 사이키델리아, 폭발적인 에너지의 라이브 퍼포먼스가 응집하여 현재 가장 새롭고, 용감한, 사운드를 만드는 밴드 ‘실리카겔(Silica Gel)’이 되었다.
+    </div>
+    
+        <img src="https://i.imgur.com/prjdNLz.png" alt="추가 이미지" class="additional-image">
+    <div class="additional-image-container">
+       
+            <img src="https://i.imgur.com/7cwCf6Y.png" alt="추가 이미지" class="full-width-image">
+        
+    </div>
+</div>
+
+<script>
+window.addEventListener('scroll', function() {
+    let artistName = document.querySelector('.artist-name');
+    let albumTitle = document.querySelector('.album-title');
+    if (window.scrollY > 50) {
+        artistName.style.fontSize = '1em';
+        albumTitle.style.fontSize = '1em';
+    } else {
+        artistName.style.fontSize = '2em';
+        albumTitle.style.fontSize = '1.5em';
+    }
+});
+</script>
+</body>
+</html>
